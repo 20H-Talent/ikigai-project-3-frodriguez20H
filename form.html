@@ -29,7 +29,7 @@
         <hr>
 
         <form>
-            <fieldset id="Contact">
+            <fieldset class="contact">
                 <legend>Contact Information</legend>
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="Required"><br>
@@ -43,7 +43,7 @@
                 <input type="text" id="city" name="city"><br>
                 <label for="communities">Autonomous communities</label>
                 <select name="communities" id="communities">
-                    <option value="0">Choose your option.</option>
+                    <option value="0" selected disabled hidden>Choose your option</option>
                     <option value="Andalucí­a">Andalucí­a</option>
                     <option value="Aragón">Aragón</option>
                     <option value="Principado de Asturias">Principado de Asturias</option>
@@ -64,25 +64,30 @@
                     <option value="Ceuta">Ceuta</option>
                     <option value="Melilla">Melilla</option>
                 </select><br>
-                <label for="Zcode">Zip Code</label>
+                <label for="Zcode">Zip Code</label><br>
                 <input type="text" id="Zcode" name="Zcode"><br>
             </fieldset>
             <hr>
-            <fieldset>
+            <fieldset class="news">
                 <legend>Newsletter</legend>
                 <label>Select the newsletters you would like to recive</label><br>
+                <br>
                 <input id="newshtml" type="checkbox" value="HTML">
                 <label for="newshtml">HTML News</label><br>
                 <input id="newscss" type="checkbox" value="CSS">
                 <label for="newscss">CSS News</label><br>
                 <input id="newsjs" type="checkbox" value="JS">
                 <label for="newsjs">Javascript News</label><br>
+                <br>
                 <label>Newsletter format</label><br>
+                <br>
                 <input id="fhtml" type="radio" name="format" value="fhtml">
                 <label for="fhtml">HTML</label><br>
                 <input id="fplaintxt" type="radio" name="format" value="fplaintxt">
                 <label for="fplaintxt">Plain text</label><br>
+                <br>
                 <label for="othert">Other topics you'd like to hear about</label><br>
+                <br>
                 <textarea id="othert" name="othert"></textarea>
             </fieldset>
 

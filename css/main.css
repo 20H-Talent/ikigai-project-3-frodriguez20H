@@ -4,6 +4,8 @@
 }
 
 body {
+    font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2d3945;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,10 +22,10 @@ header {
 }
 
 h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-stretch: ultra-condensed;
     text-transform: uppercase;
     font-size: 1.2em;
+    font-weight: bolder;
     transform: scaleX(0.9);
 }
 
@@ -35,7 +37,6 @@ h1 {
 .top h2 {
     margin-top: 30px;
     margin-bottom: 0.5em;
-    font-size: 1.3em;
     font-weight: bold;
 }
 
@@ -46,21 +47,21 @@ h1 {
 
 .top p,
 label {
-    font-size: 1em;
+    font-size: 0.9em;
     color: grey;
     line-height: 1.2em;
     font-stretch: semi-expanded;
 }
 
 hr {
-    border: 1px solid black;
+    border: 1px solid #2d3945;
     margin-bottom: 7%;
     width: 100%
 }
 .thick {
     padding: 0;
     margin: 0 0 -0.3em;
-    border-top: 2px solid #333;
+    border-top: 2px solid #2d3945;
     color: #333;
     text-align: center;
     }
@@ -80,46 +81,93 @@ form {
 
 fieldset {
     border: none;
+    padding: 0;
 }
 
 legend {
     margin: 0 0 5% 0;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 label {
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-right: 1em;
     width: 100%;
 }
 
-input::placeholder{
+.contact input, select, textarea {
+    background-color: #eff0f1;
+    border: 0px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.contact input, select {
+    height: 3em;
+    font-style: italic;
+    padding-right: 1em;
+    padding-left: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+textarea {
+    height: 8em;
+    font-size: 0.9em;
+    padding: 1em;
+}
+
+#Zcode {
+    width: 50%;
+}
+
+input::placeholder,
+select option[value="0"],
+select option:disabled {
     font-size: 0.9em;
     text-align: right;
     color: #bebebe;
 }
 
-#name,
-#email,
-#phone,
-#address,
-#city,
-#Zcode,
-#communities {
-    background-color: #eff0f1;
-    border: 1px;
-    border-radius: 5px;
-    height: 3em;
-    text-align: left;
-    font-style: italic;
-    padding-right: 1em;
-    padding-left: 0.5em;
-    width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
+select,
+select option {
+    color: #2d3945;
+    font-size: 0.9em;
 }
 
-input:focus{
-    border: solid #2d3945 1px;
-    background-color: aquamarine;
+
+[hidden] {
+    display: none;
+}
+
+input:focus,
+input::selection,
+textarea:focus {
+    border: solid #2d3945 2px;
+
+}
+
+.news input {
+    color: red;
+    background-color: red;
+    border: 0px;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4ebbb5;
+    height: 4em;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+}
+
+footer {
+    color: grey;
+    font-style: italic;
+    font-size: small;
 }
