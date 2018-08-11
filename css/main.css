@@ -34,7 +34,14 @@ h1 {
 
 .top h2 {
     margin-top: 30px;
+    margin-bottom: 0.5em;
     font-size: 1.3em;
+    font-weight: bold;
+}
+
+.top p {
+    padding: 0 1em;
+    margin-bottom: 1em;
 }
 
 .top p,
@@ -86,6 +93,12 @@ label {
     width: 100%;
 }
 
+input::placeholder{
+    font-size: 0.9em;
+    text-align: right;
+    color: #bebebe;
+}
+
 #name,
 #email,
 #phone,
@@ -97,10 +110,16 @@ label {
     border: 1px;
     border-radius: 5px;
     height: 3em;
-    text-align: right;
+    text-align: left;
     font-style: italic;
     padding-right: 1em;
+    padding-left: 0.5em;
     width: 100%;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+input:focus{
+    border: solid #2d3945 1px;
+    background-color: aquamarine;
 }

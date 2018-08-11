@@ -5,8 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Online Registration Form</title>
+    <link rel="icon" type="image/png" href="/20H.png" sizes="64x64">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <!-- Source File --> 
+	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700,300,300i" rel='stylesheet' type="text/css">
@@ -69,17 +71,17 @@
             <fieldset>
                 <legend>Newsletter</legend>
                 <label>Select the newsletters you would like to recive</label><br>
-                <input id="news" type="checkbox" value="HTML">
-                <label for="HTML">HTML News</label><br>
-                <input id="news" type="checkbox" value="CSS">
-                <label for="CSS">CSS News</label><br>
-                <input id="news" type="checkbox" value="JS">
-                <label for="JS">Javascript News</label><br>
+                <input id="newshtml" type="checkbox" value="HTML">
+                <label for="newshtml">HTML News</label><br>
+                <input id="newscss" type="checkbox" value="CSS">
+                <label for="newscss">CSS News</label><br>
+                <input id="newsjs" type="checkbox" value="JS">
+                <label for="newsjs">Javascript News</label><br>
                 <label>Newsletter format</label><br>
-                <input id="fnews" type="radio" name="format" value="fhtml">
-                <label>HTML</label><br>
-                <input id="fnews" type="radio" name="format" value="fplaintxt">
-                <label>Plain text</label><br>
+                <input id="fhtml" type="radio" name="format" value="fhtml">
+                <label for="fhtml">HTML</label><br>
+                <input id="fplaintxt" type="radio" name="format" value="fplaintxt">
+                <label for="fplaintxt">Plain text</label><br>
                 <label for="othert">Other topics you'd like to hear about</label><br>
                 <textarea id="othert" name="othert"></textarea>
             </fieldset>
