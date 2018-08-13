@@ -9,6 +9,7 @@ html {
   color: #000;
   background: #fff;
 }
+
 body,
 div,
 dl,
@@ -37,14 +38,17 @@ td {
   margin: 0;
   padding: 0;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 fieldset,
 img {
   border: 0;
 }
+
 address,
 caption,
 cite,
@@ -57,14 +61,17 @@ var {
   font-style: normal;
   font-weight: normal;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 caption,
 th {
   text-align: left;
 }
+
 h1,
 h2,
 h3,
@@ -74,21 +81,26 @@ h6 {
   font-size: 100%;
   font-weight: normal;
 }
+
 q:before,
 q:after {
   content: "";
 }
+
 abbr,
 acronym {
   border: 0;
   font-variant: normal;
 }
+
 sup {
   vertical-align: text-top;
 }
+
 sub {
   vertical-align: text-bottom;
 }
+
 input,
 textarea,
 select {
@@ -97,9 +109,7 @@ select {
   font-weight: inherit;
   *font-size: 100%;
 }
+
 legend {
   color: #000;
-}
-#yui3-css-stamp.cssreset {
-  display: none;
 }

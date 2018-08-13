@@ -118,12 +118,6 @@ select {
   margin-bottom: 1em;
 }
 
-textarea {
-  height: 8em;
-  font-size: 0.9em;
-  padding: 1em;
-}
-
 #Zcode {
   width: 50%;
 }
@@ -147,7 +141,6 @@ select option {
 }
 
 input:focus,
-input::selection,
 textarea:focus,
 select:focus {
   border: solid #2d3945 2px;
@@ -177,52 +170,47 @@ footer {
 
 /* =======  Radio Experimental ========= */
 
-/* .radio {
-    margin: 0.5rem;
-} */
-
 .radio input[type="radio"] {
   position: absolute;
-  opacity: 0;
+  display: none;
+  color: #46698b;
 }
 
-.radio input[type="radio"] + .radio-label:before {
+.radio input[type="radio"] + label:before {
+  font-family: "Font Awesome 5 Free";
+  color: #46698b;
+  display: inline-block;
+}
+
+.radio input[type="radio"] + label:before {
   content: "";
   background: #f4f4f4;
   border-radius: 100%;
   border: 0px solid #b4b4b4;
   display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
+  width: 1em;
+  height: 1em;
   position: relative;
-  top: 0.3em;
-  margin-right: 1em;
-  vertical-align: baseline;
+  top: 0.1em;
+  margin-right: 0.9em;
+  vertical-align: text-top;
   cursor: pointer;
   text-align: center;
   transition: all 250ms ease;
 }
 
-.radio input[type="radio"]:checked + .radio-label:before {
-  background-color: #46698b;
-  border: 1px solid #46698b;
-  box-shadow: inset 0 0 0 4px #f4f4f4;
-  margin-right: 0.9em;
+input[type="radio"] + label:before {
+  letter-spacing: 10px;
+} 
+
+input[type="radio"]:checked + label:before {
+  font-weight: 400;
+  content: "\f192";
 }
 
-/* .radio input[type="radio"]:focus + .radio-label:before {
-    outline: none;
-    border-color: #2d3945
-} */
-
-.radio input[type="radio"]:disabled + .radio-label:before {
-  box-shadow: inset 0 0 0 4px #f4f4f4;
-  background: #b4b4b4;
+input[type="radio"]:checked + label:before {
+  letter-spacing: 10px;
 }
-
-/* .radio input[type="radio"] + .radio-label:empty:before {
-    margin-right: 0;
-} */
 
 /* =======  Checked Experimental ========= */
 input[type="checkbox"] {
@@ -251,7 +239,9 @@ input[type="checkbox"] + label:before {
   text-align: center;
   transition: all 250ms ease;
 
-} /* unchecked icon */
+} 
+
+/* unchecked icon */
 input[type="checkbox"] + label:before {
   letter-spacing: 10px;
 } /* space between checkbox and label */
@@ -264,10 +254,20 @@ input[type="checkbox"]:checked + label:before {
   letter-spacing: 10px;
 } /* allow space for check mark */
 
-/* ==== Text Area ====== */
+/* ============= Text Area ================== */
 
 textarea {
-    color: #2d3945;
-    font-style: oblique;
-    font-size: 0.8em;
+  resize: none;
+  padding: 1em;
+  height: 7.85em;
+  color: #2d3945;
+  font-style: oblique;
+  font-size: 0.8em;
+}
+
+
+/* ================ Footer ==================== */
+
+footer {
+  margin: 10px 0 20px;
 }
