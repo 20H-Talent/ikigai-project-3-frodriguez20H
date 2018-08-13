@@ -3,6 +3,7 @@
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 * {
   box-sizing: border-box;
+  transition: ease all .5s;
 }
 
 body {
@@ -34,7 +35,7 @@ h1 {
 
 .top {
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 40px;
 }
 
 .top h2 {
@@ -119,7 +120,6 @@ input:hover,
 textarea:hover,
 select:hover {
   box-shadow: 5px 8px 1px #6983a18a;
-
 }
 
 .contact input,
@@ -199,7 +199,7 @@ select:focus {
 
 input[type="radio"] + label:before {
   letter-spacing: 10px;
-} 
+}
 
 input[type="radio"]:checked + label:before {
   font-weight: 400;
@@ -236,8 +236,7 @@ input[type="checkbox"] + label:before {
   cursor: pointer;
   text-align: center;
   transition: all 250ms ease;
-
-} 
+}
 
 /* unchecked icon */
 input[type="checkbox"] + label:before {
@@ -245,8 +244,8 @@ input[type="checkbox"] + label:before {
 } /* space between checkbox and label */
 
 input[type="checkbox"]:checked + label:before {
-    font-weight: 400;
-    content: "\f14a";
+  font-weight: 400;
+  content: "\f14a";
 } /* checked icon */
 input[type="checkbox"]:checked + label:before {
   letter-spacing: 10px;
@@ -301,23 +300,31 @@ footer {
 /*=================== MEDIAS ====================*/
 
 @media (min-width: 768px) {
+  * {
+    transition: ease all .5s;
+  }
 
   .wrapper {
-    display: flex;
+    align-self: center;
+    width: 50%;
   }
 
   form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    align-content: center;
   }
 
-  .contact {
-    flex: 0 1 100%;
+  div.contact_input {
+    display: flex;
+    align-items: center;
   }
 
-  .contact>* {
-    display: inline-flex;
-    flex: 0 2 50%;
+  div.contact_input label {
+    width: 40%;
   }
+
+  div.contact_input #label_Zcode {
+    width: 28.1%;
+  }
+
 }
