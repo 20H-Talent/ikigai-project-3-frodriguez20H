@@ -136,16 +136,12 @@ select {
   width: 50%;
 }
 
-::-webkit-input-placeholder, 
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder,
 input::placeholder,
 select option[value="0"],
 select option:disabled {
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-align: right;
-  color: #bebebe;
+  color: #587c99;
 }
 
 select,
