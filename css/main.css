@@ -264,6 +264,10 @@ textarea {
 }
 
 /* =============== Buttons =================== */
+button {
+  display: flex;
+  justify-content: center;
+}
 button[type="submit"] {
   background-color: #4ebbb5;
   height: 4em;
@@ -292,4 +296,28 @@ footer {
   font-style: italic;
   font-size: small;
   margin: 10px 0 20px;
+}
+
+/*=================== MEDIAS ====================*/
+
+@media (min-width: 768px) {
+
+  .wrapper {
+    display: flex;
+  }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact {
+    flex: 0 1 100%;
+  }
+
+  .contact>* {
+    display: inline-flex;
+    flex: 0 2 50%;
+  }
 }
