@@ -143,7 +143,8 @@ select option {
 input:focus,
 textarea:focus,
 select:focus {
-  border: solid #2d3945 2px;
+  border: 2px solid #2d3945;
+  outline: none;
 }
 
 .news input {
