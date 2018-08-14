@@ -3,7 +3,7 @@
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 * {
   box-sizing: border-box;
-  transition: ease all .5s;
+  transition: ease all 0.5s;
   margin: 0 auto;
 }
 
@@ -321,7 +321,7 @@ footer {
 
 @media (min-width: 768px) {
   * {
-    transition: ease all .5s;
+    transition: ease all 0.5s;
   }
 
   .wrapper {
@@ -340,11 +340,15 @@ footer {
   }
 
   div.contact_input label {
-    width: 40%;
+    min-width: 40%;
+    max-width: 20%;
   }
 
   div.contact_input #label_Zcode {
-    width: 28.1%;
+    margin-left: 0;
   }
 
+  #Zcode {
+    max-width: 20%;
+  }
 }
